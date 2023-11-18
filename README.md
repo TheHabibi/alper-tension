@@ -17,3 +17,7 @@ This Chrome extension is designed to enhance the YouTube browsing experience for
    - Navigate to a YouTube video page.
    - Click the search bar to trigger the extension.
 
+
+<div align="center">
+  <img src="icon.png" alt="Extension Icon">
+</div>
