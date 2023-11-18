@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Alper Tension",
+  "version": "1.0",
+  "description": "Search YouTube with the title of current video you are watching",
+  "permissions": ["activeTab"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "icons": {
+    "48": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
