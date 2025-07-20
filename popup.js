@@ -1,5 +1,9 @@
-document.getElementById("searchButton").addEventListener("click", function () {
-  chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
-    chrome.tabs.sendMessage(tabs[0].id, { action: "searchYouTube" });
+document.getElementById('searchButton').addEventListener('click', async () => {
+  const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
+  const titleResp = await chrome.runtime.sendMessage({ action: 'getVideoTitle' });
+  
+  chrome.runtime.sendMessage({
+    action: 'searchYouTube',
+    videoTitle: titleResp.videoTitle
   });
 });
