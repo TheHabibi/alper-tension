@@ -16,7 +16,7 @@ This Chrome extension is designed to enhance the YouTube browsing experience for
 2. **Activation:**
    - Navigate to a YouTube video page.
    - Click the search bar to trigger the extension.
-   - test
+   - test1
 
 
 <div align="center">
